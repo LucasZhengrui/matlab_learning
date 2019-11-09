@@ -1,0 +1,25 @@
+a=input('输入系数a：');
+b=input('输入系数b：');
+c=input('输入系数c：');
+delta=b^b-4*a*c;
+if(delta)>0
+    x1=(-b+sqrt(delta))/(2*a);
+    x2=(-b-sqrt(delta))/(2*a);
+    fprintf('两个实根：');
+    x1
+    fprintf(',');
+    x2
+elseif(delta==0)
+    x1=(-b+sqrt(delta))/(2*a);
+    fprintf('两个相等的实根：');
+    x1
+else
+    real_part=-b/(2*a);
+    imag_part=sqrt(abs((delta))/(2*a));
+    x1=real_part+imag_part*i;
+    x2=real_part-imag_part*i;
+    fprintf('两个虚根：');
+    x1
+    fprintf(',');
+    x2
+end

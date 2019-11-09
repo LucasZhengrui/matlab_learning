@@ -1,0 +1,1 @@
+x=imread('bibibi.jpg');
